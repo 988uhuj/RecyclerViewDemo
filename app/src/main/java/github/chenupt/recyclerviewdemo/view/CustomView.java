@@ -36,16 +36,12 @@ public class CustomView extends BaseItemModel {
             }
         });
         textView = (TextView) findViewById(R.id.text_view);
-        textView.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
     }
 
     @Override
     public void bindView() {
-        btn.setText("" + getViewHolder().getPosition() + ",old:" + getViewHolder().getOldPosition());
+//        btn.setText("" + getViewHolder().getPosition() + ",old:" + getViewHolder().getOldPosition());
+        textView.setText(getViewHolder().getPosition());
     }
 }
