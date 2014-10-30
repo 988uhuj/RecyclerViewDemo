@@ -41,7 +41,6 @@ public class CustomView extends BaseItemModel {
 
     @Override
     public void bindView() {
-//        btn.setText("" + getViewHolder().getPosition() + ",old:" + getViewHolder().getOldPosition());
-        textView.setText(getViewHolder().getPosition());
+        textView.setText(getViewHolder().getPosition() + "");
     }
 }
